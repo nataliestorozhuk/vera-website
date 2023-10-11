@@ -32,3 +32,5 @@ function userScroll() {
         }
     });
 }
+
+document.addEventListener('DOMContentLoaded', userScroll);
