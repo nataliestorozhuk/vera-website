@@ -33,4 +33,32 @@ function userScroll() {
     });
 }
 
+
+
+
 document.addEventListener('DOMContentLoaded', userScroll);
+
+
+// Video Modal
+const videoBtn = document.querySelector('.video-btn')
+const videoModal = document.querySelector('#videoModal')
+const video = document.querySelector('#video')
+// Using let because I want to reasign it. Can't do the with the const.
+let videoSrc;
+
+if (videoBtn !== null) {
+    videoBtn.addEventListener('click', () => {
+        videoSrc = videoBtn.getAttribute('data-bs-src');
+    });
+}
+
+
+if (videoModal !== null) {
+    videoModal.addEventListener('shown.bs.modal', () => {
+        video.setAttribute('src', videoSrc + '?autoplay=1;modelsbranding=1;showInfo=0');
+    });
+
+    videoModal.addEventListener('hide.bs.modal', () => {
+        video.setAttribute('src', videoSrc);
+    });
+}
