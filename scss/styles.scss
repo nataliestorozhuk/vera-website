@@ -1,20 +1,20 @@
-.xl-text{
+.xl-text {
     font-size: 65px;
-}
-.header{
-   background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), 
-   url('../images/header-background.jpg') left center no-repeat;
-   background-size: cover;
-   height: 600px;
-}
-
-.vertical-decoration{
-top: 12%;
-width: 24px;
-}
-
-// for the orange horizontal line on the left
-.hr-heading{
+  }
+  
+  .header {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+      url('../images/header-background.jpg') left center no-repeat;
+    background-size: cover;
+    height: 600px;
+  }
+  
+  .vertical-decoration {
+    top: 12%;
+    width: 24px;
+  }
+  
+  .hr-heading {
     display: inline-block;
     width: 3.5rem;
     height: 0.125rem;
@@ -22,30 +22,30 @@ width: 24px;
     border: none;
     background-color: var(--bs-primary);
     opacity: 1;
-}
-
-.navbar-sticky{
-    opacity: 0.8;
-}
-
-.navbar{
+  }
+  
+  .navbar {
     transition: all 0.5s ease-in-out;
-}
-
-.details .vertical-decoration{
+  }
+  
+  .navbar-sticky {
+    opacity: 0.8;
+  }
+  
+  .details .vertical-decoration {
     top: 0;
     left: 0;
     width: 24px;
-}
-
-.details-2 .vertical-decoration{
+  }
+  
+  .details-2 .vertical-decoration {
     top: 5%;
     right: 0;
     width: 24px;
-}
-
-// Video Play Button, it's basically a container we are using it to position it.
-.video-play-button {
+  }
+  
+  // Video Play Button, it's basically a container we are using it to position it.
+  .video-play-button {
     position: absolute;
     z-index: 10;
     top: 50%;
@@ -59,8 +59,8 @@ width: 24px;
     padding: 1.125rem 1.25rem 1.125rem 1.75rem;
     cursor: pointer;
   }
-
-.video-play-button:before {
+  
+  .video-play-button:before {
     content: '';
     position: absolute;
     z-index: 0;
@@ -73,10 +73,10 @@ width: 24px;
     display: block;
     background: var(--bs-primary);
     cursor: pointer;
-    animation:pulse-border 1500ms ease-in-out infinite;
+    animation: pulse-border 1500ms ease-in-out infinite;
   }
-
-.video-play-button::after {
+  
+  .video-play-button:after {
     content: '';
     position: absolute;
     z-index: 1;
@@ -91,7 +91,7 @@ width: 24px;
     cursor: pointer;
     transition: all 200ms;
   }
-
+  
   .video-play-button span {
     position: relative;
     display: block;
@@ -105,9 +105,8 @@ width: 24px;
     border-top: 16px solid transparent;
     border-bottom: 16px solid transparent;
   }
-
-
-@keyframes pulse-border {
+  
+  @keyframes pulse-border {
     0% {
       transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
       opacity: 1;
@@ -118,25 +117,37 @@ width: 24px;
       opacity: 0;
     }
   }
-
-
-
-@media (max-width: 992px) {
-    .xl-text{
-        font-size: 50px;
+  
+  .video-modal .modal-dialog {
+    max-width: 1150px;
+    margin-top: 20px;
+  }
+  
+  .project-modals .modal-dialog {
+    max-width: 150px;
+    margin-top: 130px;
+  }
+  
+  @media (max-width: 992px) {
+    .xl-text {
+      font-size: 50px;
     }
-
-    .header{
-        text-align: center;
-        background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.9)), 
+  
+    .header {
+      text-align: center;
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)),
         url('../images/header-background.jpg') center center no-repeat;
     }
-
-    .video-points{
-        padding: 0 !important;
-        text-align: center;
+  
+    .video-points {
+      padding: 0 !important;
+      text-align: center;
     }
-    .video-points .col-lg-4{
-        margin-bottom: 20px;
+  
+    .video-points .col-lg-4 {
+      margin-bottom: 20px;
     }
-}
+  }
+  
+  
+  
